@@ -4,10 +4,11 @@ block content
   h1 Bank Of React API
   h3 Endpoints: 
 
-  h4 Credits
+  h4 /credits
   ul
     li 
-      a(href="/credits") GET All Credits  
+      a(href="/credits") GET 
+      p Retrieve all credits
       p Sample Response
       code(style='white-space:pre;')
         | [
@@ -24,12 +25,21 @@ block content
         |     "date": "2018-03-16T22:28:45.938Z"
         |   }
         | ]
+    li 
+      a(href="/credits") POST
+      p Create New Credit  
+      p Sample Body
+      code(style='white-space:pre;')
+        | {
+        |  	"description": "Fantastic Soda Machine",
+        |	  "amount": 123.99
+        | }
 
-
-  h4 Debits
+  h4 /debits
   ul
     li
-      a(href="/debits") GET All Debits 
+      a(href="/debits") GET 
+      p Retrieve all debits
       p Sample Response
       code(style='white-space:pre;')
         | [
@@ -46,3 +56,12 @@ block content
         |     "date": "2017-12-28T15:36:05.241Z"
         |   }
         | ]
+    li
+      a(href="/credits") POST 
+      p Create New Credit  
+      p Sample Body
+      code(style='white-space:pre;')
+        | {
+        |  	"description": "Fantastic Soda Machine",
+        |	  "amount": 123.99
+        | }
