@@ -31,6 +31,9 @@ app.use('/debits', debitsController);
 const creditsController = require('./routes/credits');
 app.use('/credits', creditsController);
 
+const user = require('./routes/me');
+app.use('/me', user);
+
 app.get('/', (req, res) => {
   res.render('index')
 });

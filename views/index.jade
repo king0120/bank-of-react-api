@@ -65,3 +65,26 @@ block content
         |  	"description": "Fantastic Soda Machine",
         |	  "amount": 123.99
         | }
+  h4 /me
+  ul
+    li
+      a(href="/me") GET 
+      p Get Mock User Data
+      p Sample Response
+      code(style='white-space:pre;')
+        | {
+        |   name: "Isabella Williams",
+        |   email: "test-email-address@gmail.net",
+        |   city: "Atlanta, GA",
+        |   memberSince: "2013-02-17T02:30:00.348Z"
+        | } 
+    li
+      a(href="/credits") PATCH/PUT 
+      p Update Current User
+      p Sample Body
+      code(style='white-space:pre;')
+        | {
+        |   name: "Jim Jefferson",
+        |   email: "i_love_tacos_85@gmail.net",
+        |   city: "Columbus, OH",
+        | }
