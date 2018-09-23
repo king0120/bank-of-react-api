@@ -1,5 +1,48 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Bank Of React API
+  h3 Endpoints: 
+
+  h4 Credits
+  ul
+    li 
+      a(href="/credits") GET All Credits  
+      p Sample Response
+      code(style='white-space:pre;')
+        | [
+        |   {
+        |     "id": "963a03dd-1388-4267-bee7-f061886522e5",
+        |     "description": "Refined Frozen Soap",
+        |     "amount": 350.99,
+        |     "date": "2018-04-15T05:47:22.348Z"
+        |   },
+        |   {
+        |     "id": "2cb7066e-47b3-496b-b7c7-d2abc6cbe7a8",
+        |     "description": "Ergonomic Granite Shoes",
+        |     "amount": 668.15,
+        |     "date": "2018-03-16T22:28:45.938Z"
+        |   }
+        | ]
+
+
+  h4 Debits
+  ul
+    li
+      a(href="/debits") GET All Debits 
+      p Sample Response
+      code(style='white-space:pre;')
+        | [
+        |   {
+        |     "id": "bfa3e15c-74f6-4169-a3fa-10dc1e030d82",
+        |     "description": "Ergonomic Wooden Bike",
+        |     "amount": 610.48,
+        |     "date": "2017-12-04T20:23:22.468Z"
+        |   },
+        |   {
+        |     "id": "5979e8e0-2410-4055-bce8-5b4a00b292f2",
+        |     "description": "Handmade Granite Shoes",
+        |     "amount": 66.28,
+        |     "date": "2017-12-28T15:36:05.241Z"
+        |   }
+        | ]

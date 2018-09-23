@@ -31,6 +31,10 @@ app.use('/debits', debitsController);
 const creditsController = require('./routes/credits');
 app.use('/credits', creditsController);
 
+app.get('/', (req, res) => {
+  res.render('index')
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   const err = new Error('Not Found');
